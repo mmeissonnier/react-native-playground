@@ -27,7 +27,7 @@ const Login: NavigationScreenComponent<NavigationScreenProps> = ({
               const userCredentials = await firebase
                 .auth()
                 .signInWithEmailAndPassword(values.email, values.password);
-              console.warn('SUCCESS', JSON.stringify(userCredentials.user));
+              // console.warn('SUCCESS', JSON.stringify(userCredentials.user));
               navigation.navigate(APP);
             } catch (err) {
               console.error(err.message);

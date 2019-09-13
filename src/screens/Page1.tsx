@@ -42,7 +42,7 @@ const Page1: NavigationScreenComponent = ({ navigation }) => {
     };
 
     const updatePosition = (position: GeoPosition) => {
-      console.warn('FETCHING POSITION');
+      // console.warn('FETCHING POSITION');
       const region = {
         latitude: position.coords.latitude,
         longitude: position.coords.longitude,
@@ -53,7 +53,7 @@ const Page1: NavigationScreenComponent = ({ navigation }) => {
     };
 
     const didFocusListener = navigation.addListener('didFocus', async () => {
-      console.warn('DID FOCUS');
+      // console.warn('DID FOCUS');
       if (Platform.OS === 'android') {
         try {
           await requestAndroidPermission();
@@ -67,12 +67,12 @@ const Page1: NavigationScreenComponent = ({ navigation }) => {
             updatePosition(pos);
           },
           error => {
-            console.warn(error.message);
+            // console.warn(error.message);
             setState({ ...state, initialRegion: undefined });
           },
           {
             enableHighAccuracy: true,
-            distanceFilter: 0,
+            distanceFilter: 1,
             interval: 2000,
             fastestInterval: 2000,
           }
@@ -81,7 +81,7 @@ const Page1: NavigationScreenComponent = ({ navigation }) => {
     });
 
     const willBlurListener = navigation.addListener('willBlur', () => {
-      console.warn('WILL BLUR');
+      // console.warn('WILL BLUR');
       geolocation.clearWatch(watchId);
     });
 
