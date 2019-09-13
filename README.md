@@ -7,6 +7,8 @@ This app uses :
 - Map with geolocation  
 - React Native Elements  
 - Storybook
+- Svg icons and images
+- Form handling with Formik & Yup
 - Firebase for authentication and API calls
 
 ![alt text](./demo/ios.gif "Demo iOS")
