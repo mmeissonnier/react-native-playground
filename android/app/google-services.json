@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1010621790740",
+    "firebase_url": "https://myawesomeapptest-1f7ee.firebaseio.com",
+    "project_id": "myawesomeapptest-1f7ee",
+    "storage_bucket": "myawesomeapptest-1f7ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010621790740:android:d1181aa1d3755d2e0a0501",
+        "android_client_info": {
+          "package_name": "com.myawesomeapptest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010621790740-vscph2cakqaibob88cr4jsticghad2fj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtEXhk7Y1LY5RPUaVzhSVozlJUUAw5OF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010621790740-vscph2cakqaibob88cr4jsticghad2fj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1010621790740-k3clu6kofbu47poc2jnn6uevb1mklngh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.MyAwesomeAppTest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
