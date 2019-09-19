@@ -8,11 +8,15 @@
     "lint": "eslint .",
     "tsc": "tsc",
     "devtools": "react-devtools",
+    "bundle:ios": "react-native bundle   --entry-file   index.ts  --bundle-output ios/main.jsbundle   --dev  false  --platform ios  --assets-dest  ios",
     "run:ios": "react-native run-ios",
     "run:android": "react-native run-android",
     "storybook": "start-storybook -p 7007"
   },
   "dependencies": {
+    "appcenter": "^2.3.0",
+    "appcenter-analytics": "^2.3.0",
+    "appcenter-crashes": "^2.3.0",
     "formik": "^1.5.8",
     "react": "16.8.6",
     "react-devtools": "^3.6.3",

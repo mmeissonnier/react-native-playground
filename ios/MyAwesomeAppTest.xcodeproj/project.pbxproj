@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* MyAwesomeAppTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MyAwesomeAppTestTests.m */; };
-		0121881AF3747F551B8D2BCE /* libPods-MyAwesomeAppTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9258B1FB36ED44D914E445 /* libPods-MyAwesomeAppTest.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -58,6 +57,7 @@
 		2D02E4901E0B4A5D006451C7 /* MyAwesomeAppTest-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyAwesomeAppTest-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		325074D01C926C3F430C4302 /* libPods-MyAwesomeAppTest-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyAwesomeAppTest-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		438B6BE7FCC6029691EED869 /* Pods-MyAwesomeAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAwesomeAppTest.release.xcconfig"; path = "Target Support Files/Pods-MyAwesomeAppTest/Pods-MyAwesomeAppTest.release.xcconfig"; sourceTree = "<group>"; };
+		4E52DD222333C0F400F9B40E /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		4EA9BFE722F853E300E2523C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		73576B3473691DF622C2D925 /* Pods-MyAwesomeAppTest-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAwesomeAppTest-tvOS.release.xcconfig"; path = "Target Support Files/Pods-MyAwesomeAppTest-tvOS/Pods-MyAwesomeAppTest-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		862D3F8425FE1A967BEFBC42 /* Pods-MyAwesomeAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAwesomeAppTest.debug.xcconfig"; path = "Target Support Files/Pods-MyAwesomeAppTest/Pods-MyAwesomeAppTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0121881AF3747F551B8D2BCE /* libPods-MyAwesomeAppTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +176,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				4E52DD222333C0F400F9B40E /* main.jsbundle */,
 				13B07FAE1A68108700A75B9A /* MyAwesomeAppTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* MyAwesomeAppTestTests */,
@@ -296,6 +296,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = G8D9U26TCP;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -373,7 +374,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -383,7 +384,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -692,7 +693,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = G8D9U26TCP;
 				INFOPLIST_FILE = MyAwesomeAppTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -715,7 +716,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = G8D9U26TCP;
 				INFOPLIST_FILE = MyAwesomeAppTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
