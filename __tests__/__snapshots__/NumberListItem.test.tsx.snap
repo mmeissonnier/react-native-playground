@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "white",
+        "fontSize": 20,
+        "fontWeight": "200",
+      }
+    }
+  >
+    Foo
+  </Text>
+  <ForwardRef(Themed.Slider)
+    maximumValue={50}
+    minimumValue={0}
+    onValueChange={[Function]}
+    step={10}
+    style={
+      Object {
+        "width": 200,
+      }
+    }
+    value={0}
+  />
+</View>
+`;

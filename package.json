@@ -65,18 +65,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "yarn tsc",
       "pre-push": "yarn test"
     }
-  },
-  "lint-staged": {
-    "*.ts?(x)": [
-      "tsc",
-      "git add"
-    ],
-    "*.js?(x)": [
-      "eslint --fix",
-      "git add"
-    ]
   }
 }
