@@ -10,6 +10,7 @@ This app uses :
 - Svg icons and images
 - Form handling with Formik & Yup
 - Firebase for authentication and API calls
+- Push Notification with Firebase Cloud Messaging (Android only for now...)
 
 ![alt text](./demo/ios.gif "Demo iOS")
 
