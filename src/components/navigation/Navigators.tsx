@@ -9,6 +9,7 @@ import Home from '../../screens/Home';
 import Settings from '../../screens/Settings';
 import CharacterList from '../../screens/CharacterListContainer';
 import CharacterDetails from '../../screens/CharacterDetailsContainer';
+import Animations from '../../screens/Animations';
 import Page1 from '../../screens/Page1';
 import {
   HOME,
@@ -19,6 +20,7 @@ import {
   STORYBOOK,
   CHARACTERS,
   CHARACTER_DETAILS,
+  ANIMATIONS,
 } from '../../constant';
 
 const AppStackNavigator = createStackNavigator(
@@ -27,6 +29,7 @@ const AppStackNavigator = createStackNavigator(
     [PAGE1]: Page1,
     [CHARACTERS]: CharacterList,
     [CHARACTER_DETAILS]: CharacterDetails,
+    [ANIMATIONS]: Animations,
   },
   {
     cardStyle: {
@@ -97,8 +100,8 @@ const TabNavigator = createBottomTabNavigator(createTabNavigationRoutes(), {
 
 export default createStackNavigator(
   {
-    [LOGIN]: Login,
     [APP]: TabNavigator,
+    [LOGIN]: Login,
   },
   {
     headerMode: 'none',

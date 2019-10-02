@@ -8,6 +8,7 @@ target 'MyAwesomeAppTest' do
   pod 'Firebase/Core', '~> 6.3.0'
   pod 'Firebase/Auth', '~> 6.3.0'
   pod 'Firebase/Firestore', '~> 6.3.0'
+  pod 'Firebase/Messaging', '~> 6.3.0'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
   pod 'React-fishhook', :path => '../node_modules/react-native/Libraries/fishhook'

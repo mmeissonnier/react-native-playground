@@ -20,6 +20,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* MyAwesomeAppTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MyAwesomeAppTestTests.m */; };
 		4EA9BFE822F853E300E2523C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EA9BFE722F853E300E2523C /* GoogleService-Info.plist */; };
 		7C54FA5A408D1FAB391F57B8 /* libPods-MyAwesomeAppTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D4A8D8D87032CC683AD86E /* libPods-MyAwesomeAppTestTests.a */; };
+		B48FB020FD14F40FB577A04F /* libPods-MyAwesomeAppTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9258B1FB36ED44D914E445 /* libPods-MyAwesomeAppTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		2D02E4901E0B4A5D006451C7 /* MyAwesomeAppTest-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyAwesomeAppTest-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		325074D01C926C3F430C4302 /* libPods-MyAwesomeAppTest-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyAwesomeAppTest-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		438B6BE7FCC6029691EED869 /* Pods-MyAwesomeAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAwesomeAppTest.release.xcconfig"; path = "Target Support Files/Pods-MyAwesomeAppTest/Pods-MyAwesomeAppTest.release.xcconfig"; sourceTree = "<group>"; };
+		4E3471F82338FD61006CB8A1 /* MyAwesomeAppTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MyAwesomeAppTest.entitlements; path = MyAwesomeAppTest/MyAwesomeAppTest.entitlements; sourceTree = "<group>"; };
 		4E52DD222333C0F400F9B40E /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		4EA9BFE722F853E300E2523C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		73576B3473691DF622C2D925 /* Pods-MyAwesomeAppTest-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAwesomeAppTest-tvOS.release.xcconfig"; path = "Target Support Files/Pods-MyAwesomeAppTest-tvOS/Pods-MyAwesomeAppTest-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48FB020FD14F40FB577A04F /* libPods-MyAwesomeAppTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +144,7 @@
 		13B07FAE1A68108700A75B9A /* MyAwesomeAppTest */ = {
 			isa = PBXGroup;
 			children = (
+				4E3471F82338FD61006CB8A1 /* MyAwesomeAppTest.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -300,6 +304,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -689,6 +696,7 @@
 			baseConfigurationReference = 862D3F8425FE1A967BEFBC42 /* Pods-MyAwesomeAppTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyAwesomeAppTest/MyAwesomeAppTest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -704,6 +712,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MyAwesomeAppTest;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -713,6 +722,7 @@
 			baseConfigurationReference = 438B6BE7FCC6029691EED869 /* Pods-MyAwesomeAppTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyAwesomeAppTest/MyAwesomeAppTest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -727,6 +737,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MyAwesomeAppTest;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

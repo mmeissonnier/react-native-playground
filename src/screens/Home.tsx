@@ -3,17 +3,20 @@ import Background from '../assets/bg.jpg';
 import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 import { Button, Icon } from 'react-native-elements';
 import { NavigationScreenComponent, ScreenProps } from 'react-navigation';
-import { PAGE1, CHARACTERS } from '../constant';
+import { PAGE1, CHARACTERS, ANIMATIONS } from '../constant';
 
 const styles = StyleSheet.create({
   container: {
+    display: 'flex',
+    width: '100%',
     height: '100%',
   },
   background: {
     width: '100%',
     height: '100%',
-    display: 'flex',
-    alignItems: 'center',
+    top: 0,
+    left: 0,
+    position: 'absolute',
   },
   heading: {
     fontSize: 30,
@@ -39,6 +42,13 @@ const Home: NavigationScreenComponent<ScreenProps> = ({ navigation }) => {
           name="ios-american-football"
           type="ionicon"
           color="#517fa4"
+        />
+        <Button
+          style={{ width: 200, alignSelf: 'center' }}
+          title="Go to Animation Example"
+          onPress={() => {
+            navigation.navigate(ANIMATIONS);
+          }}
         />
         <Button
           style={{ width: 200, alignSelf: 'center' }}
