@@ -3,7 +3,7 @@ import Background from '../assets/bg.jpg';
 import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 import { Button, Icon } from 'react-native-elements';
 import { NavigationScreenComponent, ScreenProps } from 'react-navigation';
-import { PAGE1, CHARACTERS, ANIMATIONS } from '../constant';
+import { PAGE1, CHARACTERS, ANIMATIONS, MODAL } from '../constant';
 
 const styles = StyleSheet.create({
   container: {
@@ -42,6 +42,13 @@ const Home: NavigationScreenComponent<ScreenProps> = ({ navigation }) => {
           name="ios-american-football"
           type="ionicon"
           color="#517fa4"
+        />
+        <Button
+          style={{ width: 200, alignSelf: 'center' }}
+          title="Display Modal"
+          onPress={() => {
+            navigation.navigate(MODAL);
+          }}
         />
         <Button
           style={{ width: 200, alignSelf: 'center' }}

@@ -9,8 +9,8 @@
     "tsc": "tsc",
     "devtools": "react-devtools",
     "bundle:ios": "react-native bundle   --entry-file   index.ts  --bundle-output ios/main.jsbundle   --dev  false  --platform ios  --assets-dest  ios",
-    "run:ios": "react-native run-ios",
-    "run:android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
     "storybook": "start-storybook -p 7007"
   },
   "dependencies": {

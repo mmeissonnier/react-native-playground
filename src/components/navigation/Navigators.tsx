@@ -21,7 +21,9 @@ import {
   CHARACTERS,
   CHARACTER_DETAILS,
   ANIMATIONS,
+  MODAL,
 } from '../../constant';
+import Modal from '../../screens/Modal';
 
 const AppStackNavigator = createStackNavigator(
   {
@@ -98,10 +100,21 @@ const TabNavigator = createBottomTabNavigator(createTabNavigationRoutes(), {
   },
 });
 
-export default createStackNavigator(
+const ModalStack = createStackNavigator(
   {
     [APP]: TabNavigator,
+    [MODAL]: Modal,
+  },
+  {
+    mode: 'modal',
+    headerMode: 'none',
+  }
+);
+
+export default createStackNavigator(
+  {
     [LOGIN]: Login,
+    [APP]: ModalStack,
   },
   {
     headerMode: 'none',

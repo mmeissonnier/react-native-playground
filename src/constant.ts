@@ -7,3 +7,4 @@ export const CHARACTER_DETAILS = 'Character Details';
 export const SETTINGS = 'Settings';
 export const STORYBOOK = 'Storybook';
 export const ANIMATIONS = 'Animations';
+export const MODAL = 'MODAL';
